@@ -18,7 +18,7 @@ class Trainer {
   }
 }
 
-const jason = new Trainer('Jason', [778,306,385])
+const jason = new Trainer('Jason', [306,205,385])
 const joan = new Trainer('Joan', [74,150,356])
 const esteban = new Trainer('Esteban', ["articuno", "zapdos", "ho-oh"])
 console.log(jason)
@@ -69,3 +69,5 @@ for (let team of trainer.party) {
 reload(jason)
 reload(joan)
 reload(esteban)
+
+console.log(jason.party[4].name);
