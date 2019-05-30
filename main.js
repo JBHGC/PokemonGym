@@ -20,7 +20,7 @@ class Trainer {
 
 const jason = new Trainer('Jason', [778,306,385])
 const joan = new Trainer('Joan', [74,150,356])
-const esteban = new Trainer('Esteban', ["articuno", "zapdos", "Ho-oh"])
+const esteban = new Trainer('Esteban', ["articuno", "zapdos", "ho-oh"])
 console.log(jason)
 console.log(joan)
 console.log(esteban)
@@ -61,3 +61,11 @@ function loadPkmn(pknum, trainer) {
   xhttp.open('GET', `https://pokeapi.co/api/v2/pokemon/${pknum}`, true)
   xhttp.send()
 }
+function reload(trainer) {
+for (let team of trainer.party) {
+  loadPkmn(team, trainer)
+}}
+
+reload(jason)
+reload(joan)
+reload(esteban)
