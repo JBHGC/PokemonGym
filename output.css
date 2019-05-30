@@ -5,8 +5,8 @@
 }
 
 .card-3, .card-2, .card {
-  width: 264px;
-  height: 349px;
+  width: 253px;
+  height: 393px;
   background: #fff;
   position: absolute;
   border-radius: 7px;
@@ -15,12 +15,22 @@
 }
 
 .card-3 .top-square, .card-2 .top-square, .card .top-square {
-  width: 220px;
+  width: 200px;
   height: 122px;
   border: 2px solid goldenrod;
   position: relative;
   top: 1rem;
   margin: 0 auto;
+  border-radius: 5px;
+}
+
+.bottom-square {
+  width: 200px;
+  height: 222px;
+  border: 2px solid goldenrod;
+  position: relative;
+  margin: 0 auto;
+  top: 1.5rem;
   border-radius: 5px;
 }
 

@@ -5,8 +5,8 @@
 }
 
 %card-size{
-    width: 264px;
-    height: 349px;
+    width: 253px;
+    height: 393px;
     background: #fff;
     position: absolute;
     border-radius: 7px;
@@ -16,7 +16,7 @@
 
 %square-size{
 
-    width: 220px;
+    width: 200px;
     height: 122px;
     border: 2px solid goldenrod;
     position: relative;
@@ -24,6 +24,16 @@
     margin: 0 auto;
     border-radius: 5px;
  
+}
+
+%bottom-square-size{
+    width: 200px;
+    height: 222px;
+    border: 2px solid goldenrod;
+    position: relative;
+    margin: 0 auto;
+    top: 1.5rem;
+    border-radius: 5px;
 }
 body{
     background: #333;
@@ -96,4 +106,8 @@ body{
         @extend %square-size;
     }
 
+}
+
+.bottom-square{
+    @extend %bottom-square-size;
 }
