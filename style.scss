@@ -1,3 +1,99 @@
+%trainer-size{
+    width: 15%;
+    position: absolute;
+    top: 300px;
+}
+
+%card-size{
+    width: 264px;
+    height: 349px;
+    background: #fff;
+    position: absolute;
+    border-radius: 7px;
+    border: 7px solid goldenrod;
+    top: 15rem;
+}
+
+%square-size{
+
+    width: 220px;
+    height: 122px;
+    border: 2px solid goldenrod;
+    position: relative;
+    top: 1rem;
+    margin: 0 auto;
+    border-radius: 5px;
+ 
+}
+body{
+    background: #333;
+}
+
 .container-1{
-    background-image: url('')
+    position: absolute;
+    top: 25rem;
+    
+}
+
+.container-2{
+    position: absolute;
+    top: 50rem;
+}
+
+.container-3{
+    position: absolute;
+    top: 75rem;
+}
+
+.trainer{
+    width: 3%;
+    position: absolute;
+    left: 100px;
+    top: 300px;
+}
+
+.trainer-1{
+    @extend %trainer-size;
+    width: 10%;
+    left: 300px;
+}
+
+.trainer-2{
+    @extend %trainer-size;
+    width: 14%;
+    left: 400px;
+}
+
+.trainer-3{
+    @extend %trainer-size;
+    width: 10.5%;
+    left: 586px;
+    top: 294px;
+}
+
+.card{
+    @extend %card-size; 
+    left: 45rem;
+    .top-square{
+        @extend %square-size;
+    }
+}
+
+.card-2{
+    @extend %card-size;
+    left: 63rem;
+    .top-square{
+        @extend %square-size;
+    }
+    
+
+}
+
+.card-3{
+    @extend %card-size;
+    left: 27rem;
+    .top-square{
+        @extend %square-size;
+    }
+
 }
