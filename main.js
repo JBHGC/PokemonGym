@@ -62,4 +62,45 @@ reload(jason)
 reload(joan)
 reload(esteban)
 
-pkmnstats = document.getElementsByClassName('stats')
+const allTrainers = [jason, joan, esteban]
+const jasonCards = document.getElementsByClassName('jason')
+const joanCards = document.getElementsByClassName('joan')
+const estebanCards = document.getElementsByClassName('esteban')
+
+const allCards = [jasonCards, joanCards, estebanCards]
+
+var count = 0
+setTimeout(function() {
+for (person of allTrainers) {
+  for (eachPokemon of jason.party) {
+      jasonCards[count].children[0].innerHTML =  `<img src="${eachPokemon.sprite}" >`
+      jasonCards[count].children[1].children[0].innerText = `Attack: ${eachPokemon.atk}`
+      jasonCards[count].children[1].children[1].innerText = `Defense: ${eachPokemon.def}`
+      jasonCards[count].children[1].children[2].innerText = `Sp Attack: ${eachPokemon.sp_atk}`
+      jasonCards[count].children[1].children[3].innerText = `Sp Defense: ${eachPokemon.sp_def}`
+      jasonCards[count].children[1].children[4].innerText = `Speed: ${eachPokemon.spd}`
+      count++
+    }
+    count = 0
+  for (eachPokemon of joan.party) {
+      joanCards[count].children[0].innerHTML =  `<img src="${eachPokemon.sprite}" >`
+      joanCards[count].children[1].children[0].innerText = `Attack: ${eachPokemon.atk}`
+      joanCards[count].children[1].children[1].innerText = `Defense: ${eachPokemon.def}`
+      joanCards[count].children[1].children[2].innerText = `Sp Attack: ${eachPokemon.sp_atk}`
+      joanCards[count].children[1].children[3].innerText = `Sp Defense: ${eachPokemon.sp_def}`
+      joanCards[count].children[1].children[4].innerText = `Speed: ${eachPokemon.spd}`
+      count++
+    }
+    count = 0
+  for (eachPokemon of esteban.party) {
+      estebanCards[count].children[0].innerHTML =  `<img src="${eachPokemon.sprite}" >`
+      estebanCards[count].children[1].children[0].innerText = `Attack: ${eachPokemon.atk}`
+      estebanCards[count].children[1].children[1].innerText = `Defense: ${eachPokemon.def}`
+      estebanCards[count].children[1].children[2].innerText = `Sp Attack: ${eachPokemon.sp_atk}`
+      estebanCards[count].children[1].children[3].innerText = `Sp Defense: ${eachPokemon.sp_def}`
+      estebanCards[count].children[1].children[4].innerText = `Speed: ${eachPokemon.spd}`
+      count++
+    }
+    count = 0
+  }
+}, 400)
