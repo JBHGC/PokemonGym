@@ -39,17 +39,17 @@ body {
 }
 
 .container-1 {
-  position: absolute;
+  position: relative;
   top: 25rem;
 }
 
 .container-2 {
-  position: absolute;
+  position: relative;
   top: 50rem;
 }
 
 .container-3 {
-  position: absolute;
+  position: relative;
   top: 75rem;
 }
 
