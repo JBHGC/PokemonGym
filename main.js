@@ -62,4 +62,20 @@ reload(jason)
 reload(joan)
 reload(esteban)
 
-pkmnstats = document.getElementsByClassName('stats')
+const allTrainers = [jason, joan, esteban]
+const jasonCards = document.getElementsByClassName('jason')
+const joanCards = document.getElementsByClassName('joan')
+const estebanCards = document.getElementsByClassName('esteban')
+var count = 0
+setTimeout(function() {
+for (person of allTrainers) {
+  for (eachPokemon of person.party) {
+      jasonCards[count].children[1].children[0].innerText = `Attack: ${eachPokemon.atk}`
+      jasonCards[count].children[1].children[1].innerText = `Defense: ${eachPokemon.def}`
+      jasonCards[count].children[1].children[2].innerText = `Sp Attack: ${eachPokemon.sp_atk}`
+      jasonCards[count].children[1].children[3].innerText = `Sp Defense: ${eachPokemon.sp_def}`
+      jasonCards[count].children[1].children[4].innerText = `Speed: ${eachPokemon.spd}`
+      count++
+  }
+}
+}, 400)
