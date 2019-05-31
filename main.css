@@ -1,0 +1,30 @@
+#navbar {
+  margin: 0 2% 0 2%;
+  background-color: goldenrod;
+  text-align: center;
+}
+
+#navbar ul li {
+  display: inline;
+  padding: 0 3%;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+#navbar ul li a:hover {
+  color: rgb(246, 81, 20);
+}
+
+#pageTitle {
+  text-align: center;
+  font-family: lucida;
+}
+
+#pageTitle a {
+  text-decoration: none;
+  color: #fff;
+}
