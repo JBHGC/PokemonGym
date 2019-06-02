@@ -1,23 +1,27 @@
 .trainer-3, .trainer-2, .trainer-1 {
-  width: 15%;
   position: absolute;
-  top: 300px;
+  left: 1rem;
+  top: 1rem;
+}
+
+.container-3, .container-2, .container-1 {
+  position: relative;
+  height: 600px;
 }
 
 .card-3, .card-2, .card {
-  width: 253px;
-  height: 393px;
+  width: 15rem;
+  height: 23.5625rem;
   background: #fff;
-  position: absolute;
   border-radius: 7px;
-  border: 7px solid goldenrod;
+  border: 6px solid goldenrod;
   top: 15rem;
 }
 
 .card-3 .top-square, .card-2 .top-square, .card .top-square {
-  width: 200px;
+  width: 11.5rem;
   height: 122px;
-  border: 2px solid goldenrod;
+  border: 1px solid #333;
   position: relative;
   top: 1rem;
   margin: 0 auto;
@@ -25,32 +29,89 @@
 }
 
 .bottom-square {
-  width: 200px;
+  width: 14.5rem;
   height: 222px;
-  border: 2px solid goldenrod;
   position: relative;
   margin: 0 auto;
   top: 1.5rem;
   border-radius: 5px;
 }
 
+.este-poke, .joan-poke, .jason-poke {
+  width: 59%;
+  margin-left: 2.5rem;
+}
+
+.container-3 .card, .container-2 .card, .container-1 .card {
+  display: inline-grid;
+}
+.container-3 .card-2, .container-2 .card-2, .container-1 .card-2 {
+  display: inline-grid;
+}
+.container-3 .card-3, .container-2 .card-3, .container-1 .card-3 {
+  display: inline-grid;
+}
+
 body {
+  font-family: "ZCOOL KuaiLe", cursive;
   background: #333;
 }
 
-.container-1 {
-  position: relative;
-  top: 25rem;
+hr {
+  color: #fff;
+  border-top-style: dotted;
+  border-bottom-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  width: 11%;
+  border-width: 18px;
+  padding: 1px 4px 1px 4px;
+  margin-bottom: 5rem;
 }
 
-.container-2 {
-  position: relative;
-  top: 50rem;
+.container-1 .card {
+  background-image: url("steelaf.jpg");
+}
+.container-1 .card-2 {
+  background-image: url("steelaf.jpg");
+}
+.container-1 .card-3 {
+  background-image: url("steelaf.jpg");
+}
+.container-1 .top-square {
+  background: black;
 }
 
-.container-3 {
-  position: relative;
-  top: 75rem;
+.container-2 .card {
+  background-image: url("test.jpg");
+}
+.container-2 .card-2 {
+  background-image: url("test.jpg");
+}
+.container-2 .card-3 {
+  background-image: url("test.jpg");
+}
+.container-2 .top-square {
+  background: black;
+}
+
+.container-3 .card {
+  background-image: url("blue.jpg");
+}
+.container-3 .card-2 {
+  background-image: url("yellow.jpg");
+}
+.container-3 .card-3 {
+  background-image: url("red.jpg");
+}
+.container-3 .top-square {
+  background: black;
+}
+
+.main-header {
+  width: 30%;
+  margin-left: 36%;
+  margin-top: 2%;
 }
 
 .trainer {
@@ -61,29 +122,64 @@ body {
 }
 
 .trainer-1 {
-  width: 10%;
-  left: 300px;
+  width: 13%;
 }
 
 .trainer-2 {
-  width: 14%;
-  left: 400px;
+  width: 18%;
 }
 
 .trainer-3 {
-  width: 10.5%;
-  left: 586px;
-  top: 294px;
+  width: 13%;
 }
 
-.card {
-  left: 27rem;
+.bottom-square p {
+  margin: 1.25rem 0 1.25rem 0;
 }
-.card-2 {
-  left: 45rem;
+
+.poke-data {
+  text-align: center;
+  padding-top: 0.5rem;
 }
-.card-3 {
-  left: 63rem;
+.poke-data h4 {
+  display: inline-block;
+  margin: 0;
+}
+.poke-data p {
+  display: inline-block;
+  margin: 0;
+}
+
+.poke-atr {
+  font-weight: 600;
+}
+
+#poke-atk {
+  color: #FF5959;
+}
+
+#poke-def {
+  color: #397be5;
+}
+
+#poke-spatk {
+  color: #F5AC78;
+}
+
+#poke-spdef {
+  color: #FAE078;
+}
+
+#poke-spd {
+  color: #A7DB8D;
+}
+
+.grid {
+  position: relative;
+  left: 6rem;
+  top: 3rem;
+  width: 65%;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=output.css.map */
