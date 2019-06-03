@@ -71,7 +71,7 @@ setTimeout(function() {
     for (person of allTrainers) {
       for (eachPokemon of person.party) {
         count++
-        allCards[count].children[0].innerHTML = `<h4>#${eachPokemon.pkdex}:</h4> <span>${eachPokemon.name}</span> <h4>HP:</h4> <span>${eachPokemon.hp}</span>`
+        allCards[count].children[0].innerHTML = `<h4 id='dex'>#${eachPokemon.pkdex}:</h4> <strong>${eachPokemon.name}</strong> <h4 id='hp'>HP:</h4> <strong>${eachPokemon.hp}</strong>`
         allCards[count].children[1].innerHTML =  `<img class="trainer-poke" src="${eachPokemon.sprite}" >`
         allCards[count].children[2].children[0].innerHTML = `<span class='poke-atr' id='poke-atk'>Attack:</span> <strong>${eachPokemon.atk}</strong>`
         allCards[count].children[2].children[1].innerHTML = `<span class='poke-atr' id='poke-def'>Defense:</span> <strong>${eachPokemon.def}</strong>`

@@ -58,6 +58,14 @@
   display: inline-grid;
 }
 
+.trainer-name-3, .trainer-name-2, .trainer-name-1 {
+  bottom: 26rem;
+  left: -13.4rem;
+  position: absolute;
+  font-size: 2.5rem;
+  color: #FFF;
+}
+
 body {
   font-family: "ZCOOL KuaiLe", cursive;
   margin: 0;
@@ -185,8 +193,24 @@ hr {
   color: #18e002;
 }
 
+#dex {
+  color: #870582;
+}
+
+#hp {
+  color: #55960a;
+}
+
 .stats {
   box-shadow: inset 0px -1px 3px #333;
+}
+
+.trainer-name-2 {
+  left: -12.5rem;
+}
+
+.trainer-name-3 {
+  left: -16rem;
 }
 
 /*# sourceMappingURL=output.css.map */
