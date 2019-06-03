@@ -82,4 +82,4 @@ setTimeout(function() {
       }
     }
   }
-}, 400)
+}, 450)
