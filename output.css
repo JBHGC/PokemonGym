@@ -92,9 +92,6 @@ hr {
 .container-1 .card-3 {
   background-image: url("images/steelaf.jpg");
 }
-.container-1 .top-square {
-  background: black;
-}
 
 .container-2 .card {
   background-image: url("images/test.jpg");
@@ -105,9 +102,6 @@ hr {
 .container-2 .card-3 {
   background-image: url("images/test.jpg");
 }
-.container-2 .top-square {
-  background: black;
-}
 
 .container-3 .card {
   background-image: url("images/blue.jpg");
@@ -117,9 +111,6 @@ hr {
 }
 .container-3 .card-3 {
   background-image: url("images/red.jpg");
-}
-.container-3 .top-square {
-  background: black;
 }
 
 .trainer {
