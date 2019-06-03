@@ -72,6 +72,7 @@ setTimeout(function() {
       for (eachPokemon of person.party) {
         count++
         allCards[count].children[0].innerHTML = `<h4 id='dex'>#${eachPokemon.pkdex}:</h4> <strong>${eachPokemon.name}</strong> <h4 id='hp'>HP:</h4> <strong>${eachPokemon.hp}</strong>`
+        allCards[count].children[1].setAttribute('style', `background-image: url('pkmnBackground/${eachPokemon.name}.jpg');background-size: cover`)
         allCards[count].children[1].innerHTML =  `<img class="trainer-poke" src="${eachPokemon.sprite}" >`
         allCards[count].children[2].children[0].innerHTML = `<span class='poke-atr' id='poke-atk'>Attack:</span> <strong>${eachPokemon.atk}</strong>`
         allCards[count].children[2].children[1].innerHTML = `<span class='poke-atr' id='poke-def'>Defense:</span> <strong>${eachPokemon.def}</strong>`

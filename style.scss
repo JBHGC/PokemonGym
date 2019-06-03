@@ -33,7 +33,6 @@
     top: 1rem;
     margin: 0 auto;
     border-radius: 5px;
-
 }
 
 %bottom-square-size{
@@ -99,10 +98,6 @@ hr{
     .card-3{
         background-image: url('images/steelaf.jpg')
     }
-    .top-square{
-        background: black;
-    }
-
 }
 
 .container-2{
@@ -117,11 +112,6 @@ hr{
     .card-3{
         background-image: url('images/test.jpg')
     }
-    .top-square{
-        background: black;
-    }
-
-
 }
 
 .container-3{
@@ -136,10 +126,6 @@ hr{
     .card-3{
         background-image: url('images/red.jpg')
     }
-    .top-square{
-        background: black;
-    }
-
 }
 
 .trainer{
@@ -187,7 +173,6 @@ hr{
     .top-square{
         @extend %square-size;
     }
-
 }
 
 .bottom-square{
@@ -216,7 +201,6 @@ hr{
     h4{
         display: inline-block;
         margin: 0;
-
     }
     p{
         display: inline-block;
@@ -269,4 +253,3 @@ hr{
     @extend %trainer-name-atr;
     left: -16rem;
 }
-
