@@ -137,6 +137,14 @@ hr {
   margin: 1.25rem 0 1.25rem 0;
 }
 
+.grid {
+  position: relative;
+  left: 6rem;
+  top: 11rem;
+  width: 65%;
+  margin: 0 auto;
+}
+
 .poke-data {
   text-align: center;
   padding-top: 0.5rem;
@@ -163,23 +171,15 @@ hr {
 }
 
 #poke-spatk {
-  color: #F5AC78;
+  color: #ff8f07;
 }
 
 #poke-spdef {
-  color: #FAE078;
+  color: #a3a504;
 }
 
 #poke-spd {
-  color: #A7DB8D;
-}
-
-.grid {
-  position: relative;
-  left: 6rem;
-  top: 11rem;
-  width: 65%;
-  margin: 0 auto;
+  color: #18e002;
 }
 
 /*# sourceMappingURL=output.css.map */
