@@ -6,9 +6,13 @@
 
 .container-3, .container-2, .container-1 {
   position: relative;
-  height: 800px;
   background-image: url("pokebg2.jpg");
   background-position: center;
+  min-height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card-3, .card-2, .card {
