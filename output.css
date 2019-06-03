@@ -1,7 +1,7 @@
 .trainer-3, .trainer-2, .trainer-1 {
   position: absolute;
-  left: 1rem;
-  top: 1rem;
+  left: 5rem;
+  top: 13rem;
 }
 
 .container-3, .container-2, .container-1 {
@@ -123,6 +123,8 @@ hr {
 
 .trainer-1 {
   width: 13%;
+  left: 8rem;
+  top: 19rem;
 }
 
 .trainer-2 {
@@ -135,6 +137,14 @@ hr {
 
 .bottom-square p {
   margin: 1.25rem 0 1.25rem 0;
+}
+
+.grid {
+  position: relative;
+  left: 6rem;
+  top: 11rem;
+  width: 65%;
+  margin: 0 auto;
 }
 
 .poke-data {
@@ -163,23 +173,15 @@ hr {
 }
 
 #poke-spatk {
-  color: #F5AC78;
+  color: #ff8f07;
 }
 
 #poke-spdef {
-  color: #FAE078;
+  color: #a3a504;
 }
 
 #poke-spd {
-  color: #A7DB8D;
-}
-
-.grid {
-  position: relative;
-  left: 6rem;
-  top: 11rem;
-  width: 65%;
-  margin: 0 auto;
+  color: #18e002;
 }
 
 .stats {
