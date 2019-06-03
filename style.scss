@@ -1,24 +1,34 @@
 %trainer-size{
-    width: 15%;
     position: absolute;
-    top: 300px;
+    left: 1rem;
+    top: 1rem;
+}
+
+%container-attributes{
+    position: relative;
+    background-image: url('pokebg2.jpg');
+    background-position: center;
+    min-height: 800px; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 %card-size{
-    width: 253px;
-    height: 393px;
+    width: 15rem;
+    height: 23.5625rem;
     background: #fff;
-    position: absolute;
     border-radius: 7px;
-    border: 7px solid goldenrod;
+    border: 6px solid goldenrod;
     top: 15rem;
 }
 
 %square-size{
-
-    width: 200px;
+    width: 11.5rem;
     height: 122px;
-    border: 2px solid goldenrod;
+    border: 1px solid #333;
     position: relative;
     top: 1rem;
     margin: 0 auto;
@@ -27,32 +37,101 @@
 }
 
 %bottom-square-size{
-    width: 200px;
+    width: 14.5rem;
     height: 222px;
-    border: 2px solid goldenrod;
     position: relative;
     margin: 0 auto;
     top: 1.5rem;
     border-radius: 5px;
 }
+
+%poke-gif-attributes{
+    width: 59%;
+    margin-left: 2.5rem;
+}
+
+%card-grid{
+    .card{
+        display: inline-grid;
+    }
+    .card-2{
+        display: inline-grid;
+    }
+    .card-3{
+        display: inline-grid;
+    }
+}
+
 body{
-    background: #333;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    margin: 0;
+}
+
+hr{
+    color: #fff;
+    border-top-style: dotted;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    width: 11%;
+    border-width: 18px;
+    padding: 1px 4px 1px 4px;
+    margin-bottom: 5rem;
 }
 
 .container-1{
-    position: absolute;
-    top: 25rem;
-    
+    @extend %card-grid;
+    @extend %container-attributes;
+    .card{
+        background-image: url('steelaf.jpg')
+    }
+    .card-2{
+        background-image: url('steelaf.jpg')
+    }
+    .card-3{
+        background-image: url('steelaf.jpg')
+    }
+    .top-square{
+        background: black;
+    }
+
 }
 
 .container-2{
-    position: absolute;
-    top: 50rem;
+    @extend %card-grid;
+    @extend %container-attributes;
+    .card{
+        background-image: url('test.jpg')
+    }
+    .card-2{
+        background-image: url('test.jpg')
+    }
+    .card-3{
+        background-image: url('test.jpg')
+    }
+    .top-square{
+        background: black;
+    }
+    
+
 }
 
 .container-3{
-    position: absolute;
-    top: 75rem;
+    @extend %card-grid;
+    @extend %container-attributes;
+    .card{
+        background-image: url('blue.jpg')
+    }
+    .card-2{
+        background-image: url('yellow.jpg')
+    }
+    .card-3{
+        background-image: url('red.jpg')
+    }
+    .top-square{
+        background: black;
+    }
+
 }
 
 .trainer{
@@ -64,27 +143,21 @@ body{
 
 .trainer-1{
     @extend %trainer-size;
-    width: 10%;
-    left: 300px;
+    width: 13%;
 }
 
 .trainer-2{
     @extend %trainer-size;
-    width: 14%;
-    left: 400px;
+    width: 18%;
 }
 
 .trainer-3{
     @extend %trainer-size;
-    width: 10.5%;
-    left: 586px;
-    top: 294px;
+    width: 13%;
 }
 
 .card{
-    @extend %card-size; 
-    
-    left: 27rem;
+    @extend %card-size;
     .top-square{
         @extend %square-size;
     }
@@ -92,17 +165,13 @@ body{
 
 .card-2{
     @extend %card-size;
-    left: 45rem;
     .top-square{
         @extend %square-size;
     }
-    
-
 }
 
 .card-3{
     @extend %card-size;
-    left: 63rem;
     .top-square{
         @extend %square-size;
     }
@@ -111,4 +180,61 @@ body{
 
 .bottom-square{
     @extend %bottom-square-size;
+    p{
+        margin: 1.25rem 0 1.25rem 0;
+    }
+}
+
+.jason-poke{
+    @extend %poke-gif-attributes;
+}
+
+.joan-poke{
+    @extend %poke-gif-attributes;
+    
+}
+
+.este-poke{
+    @extend %poke-gif-attributes;
+}
+
+.poke-data{
+    text-align: center;
+    padding-top: 0.50rem;
+    h4{
+        display: inline-block;
+        margin: 0;
+
+    }
+    p{
+        display: inline-block;
+        margin: 0;
+    }
+}
+
+.poke-atr{
+    font-weight: 600;  
+}
+#poke-atk{
+    color: #FF5959;
+}
+#poke-def{
+    color: #397be5;
+}
+#poke-spatk{
+    color: #F5AC78;
+}
+#poke-spdef{
+    color: #FAE078;
+}
+#poke-spd{
+    color: #A7DB8D;
+}
+
+.grid{
+    position: relative;
+    left: 6rem;
+    top: 11rem;
+    width: 65%;
+    margin: 0 auto;
 }

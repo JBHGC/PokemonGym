@@ -1,7 +1,26 @@
+body{
+  font-family: 'ZCOOL KuaiLe', cursive;
+  margin: 0;
+}
+
+.main-header{
+    width: 33%;
+    margin-left: 34%;
+    position: relative;
+    top: 5rem;
+}
+
+ul{
+  margin: 0;
+}
+
 #navbar {
-  margin: 0 2% 0 2%;
-  background-color: goldenrod;
-  text-align: center;
+    margin: 0 2% 0 2%;
+    background-color: #E3350D;
+    text-align: center;
+    padding: 1%;
+    position: relative;
+    top: 0.75rem;
 }
 
 #navbar ul li {
@@ -21,10 +40,10 @@
 
 #pageTitle {
   text-align: center;
-  font-family: lucida;
 }
 
 #pageTitle a {
   text-decoration: none;
   color: #fff;
 }
+
