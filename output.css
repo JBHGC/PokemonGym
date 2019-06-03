@@ -1,7 +1,7 @@
 .trainer-3, .trainer-2, .trainer-1 {
   position: absolute;
-  left: 5rem;
-  top: 13rem;
+  left: 6rem;
+  top: 11rem;
 }
 
 .container-3, .container-2, .container-1 {
@@ -56,6 +56,14 @@
 }
 .container-3 .card-3, .container-2 .card-3, .container-1 .card-3 {
   display: inline-grid;
+}
+
+.trainer-name-3, .trainer-name-2, .trainer-name-1 {
+  bottom: 26rem;
+  left: -13.4rem;
+  position: absolute;
+  font-size: 2.5rem;
+  color: #FFF;
 }
 
 body {
@@ -123,8 +131,8 @@ hr {
 
 .trainer-1 {
   width: 13%;
-  left: 8rem;
-  top: 19rem;
+  left: 9rem;
+  top: 17rem;
 }
 
 .trainer-2 {
@@ -133,6 +141,7 @@ hr {
 
 .trainer-3 {
   width: 13%;
+  left: 8rem;
 }
 
 .bottom-square p {
@@ -141,7 +150,7 @@ hr {
 
 .grid {
   position: relative;
-  left: 6rem;
+  left: 8rem;
   top: 11rem;
   width: 65%;
   margin: 0 auto;
@@ -184,16 +193,24 @@ hr {
   color: #18e002;
 }
 
-.grid {
-  position: relative;
-  left: 6rem;
-  top: 11rem;
-  width: 65%;
-  margin: 0 auto;
+#dex {
+  color: #870582;
+}
+
+#hp {
+  color: #55960a;
 }
 
 .stats {
   box-shadow: inset 0px -1px 3px #333;
+}
+
+.trainer-name-2 {
+  left: -12.5rem;
+}
+
+.trainer-name-3 {
+  left: -16rem;
 }
 
 /*# sourceMappingURL=output.css.map */
