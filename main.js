@@ -73,8 +73,8 @@ var count = 0
 setTimeout(function() {
 for (person of allTrainers) {
   for (eachPokemon of jason.party) {
-      jasonCards[count].children[0].innerHTML = `<h4>Name:</h4> <span>${eachPokemon.name}</span> <h4>HP:</h4> <span>${eachPokemon.hp}</span>`
-      jasonCards[count].children[1].innerHTML =  `<img class="jason-poke" src="${eachPokemon.sprite}" >`
+    jasonCards[count].children[0].innerHTML = `<h4>Name:</h4> <span>${eachPokemon.name}</span> <h4>HP:</h4> <span>${eachPokemon.hp}</span>`
+    jasonCards[count].children[1].innerHTML =  `<img class="jason-poke" src="${eachPokemon.sprite}" >`
     jasonCards[count].children[2].children[0].innerHTML = `<span class='poke-atr' id='poke-atk'>Attack:</span> <strong>${eachPokemon.atk}</strong>`
     jasonCards[count].children[2].children[1].innerHTML = `<span class='poke-atr' id='poke-def'>Defense:</span> <strong>${eachPokemon.def}</strong>`
     jasonCards[count].children[2].children[2].innerHTML = `<span class='poke-atr' id='poke-spatk'>Sp Attack:</span> <strong>${eachPokemon.sp_atk}</strong>`
@@ -85,7 +85,7 @@ for (person of allTrainers) {
     count = 0
   for (eachPokemon of joan.party) {
     joanCards[count].children[0].innerHTML = `<h4>Name:</h4> <span>${eachPokemon.name}</span> <h4>HP:</h4> <span>${eachPokemon.hp}</span>`
-      joanCards[count].children[1].innerHTML =  `<img class="joan-poke" src="${eachPokemon.sprite}" >`
+    joanCards[count].children[1].innerHTML =  `<img class="joan-poke" src="${eachPokemon.sprite}" >`
     joanCards[count].children[2].children[0].innerHTML = `<span class='poke-atr' id='poke-atk'>Attack:</span> <strong>${eachPokemon.atk}</strong>`
     joanCards[count].children[2].children[1].innerHTML = `<span class='poke-atr' id='poke-def'>Defense:</span> <strong>${eachPokemon.def}</strong>`
     joanCards[count].children[2].children[2].innerHTML = `<span class='poke-atr' id='poke-spatk'>Sp Attack:</span> <strong>${eachPokemon.sp_atk}</strong>`
@@ -95,8 +95,8 @@ for (person of allTrainers) {
     }
     count = 0
   for (eachPokemon of esteban.party) {
-      estebanCards[count].children[0].innerHTML = `<h4>Name:</h4> <span>${eachPokemon.name}</span> <h4>HP:</h4> <span>${eachPokemon.hp}</span>`
-      estebanCards[count].children[1].innerHTML =  `<img class="este-poke" src="${eachPokemon.sprite}" >`
+    estebanCards[count].children[0].innerHTML = `<h4>Name:</h4> <span>${eachPokemon.name}</span> <h4>HP:</h4> <span>${eachPokemon.hp}</span>`
+    estebanCards[count].children[1].innerHTML =  `<img class="este-poke" src="${eachPokemon.sprite}" >`
     estebanCards[count].children[2].children[0].innerHTML = `<span class='poke-atr' id='poke-atk'>Attack:</span> <strong>${eachPokemon.atk}</strong>`
     estebanCards[count].children[2].children[1].innerHTML = `<span class='poke-atr' id='poke-def'>Defense:</span> <strong>${eachPokemon.def}</strong>`
     estebanCards[count].children[2].children[2].innerHTML = `<span class='poke-atr' id='poke-spatk'>Sp Attack:</span> <strong>${eachPokemon.sp_atk}</strong>`
