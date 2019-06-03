@@ -1,7 +1,7 @@
 .trainer-3, .trainer-2, .trainer-1 {
   position: absolute;
-  left: 5rem;
-  top: 13rem;
+  left: 6rem;
+  top: 11rem;
 }
 
 .container-3, .container-2, .container-1 {
@@ -123,8 +123,8 @@ hr {
 
 .trainer-1 {
   width: 13%;
-  left: 8rem;
-  top: 19rem;
+  left: 9rem;
+  top: 17rem;
 }
 
 .trainer-2 {
@@ -133,6 +133,7 @@ hr {
 
 .trainer-3 {
   width: 13%;
+  left: 8rem;
 }
 
 .bottom-square p {
@@ -141,7 +142,7 @@ hr {
 
 .grid {
   position: relative;
-  left: 6rem;
+  left: 8rem;
   top: 11rem;
   width: 65%;
   margin: 0 auto;
@@ -182,14 +183,6 @@ hr {
 
 #poke-spd {
   color: #18e002;
-}
-
-.grid {
-  position: relative;
-  left: 6rem;
-  top: 11rem;
-  width: 65%;
-  margin: 0 auto;
 }
 
 .stats {
