@@ -15,8 +15,10 @@ ul{
 }
 
 #navbar {
-    margin: 0 2% 0 2%;
+    margin: 0 10% 0 10%;
     background-color: #E3350D;
+    border: 3px solid rgb(0, 145, 194);
+    border-radius: 6px;
     text-align: center;
     padding: 1%;
     position: relative;
@@ -35,7 +37,7 @@ ul{
 }
 
 #navbar ul li a:hover {
-  color: rgb(246, 81, 20);
+  color: goldenrod;
 }
 
 #pageTitle {
@@ -46,4 +48,3 @@ ul{
   text-decoration: none;
   color: #fff;
 }
-
