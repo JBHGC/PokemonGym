@@ -1,5 +1,6 @@
 body{
   font-family: 'ZCOOL KuaiLe', cursive;
+  margin: 0;
 }
 
 .main-header{
@@ -8,10 +9,17 @@ body{
     margin-top: 2%;
 }
 
+ul{
+  margin: 0;
+}
+
 #navbar {
-  margin: 0 2% 0 2%;
-  background-color: goldenrod;
-  text-align: center;
+    margin: 0 2% 0 2%;
+    background-color: #E3350D;
+    text-align: center;
+    padding: 1%;
+    position: relative;
+    top: 0.75rem;
 }
 
 #navbar ul li {

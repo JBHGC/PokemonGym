@@ -6,7 +6,9 @@
 
 %container-attributes{
     position: relative;
-    height: 600px;
+    height: 800px;
+    background-image: url('pokebg2.jpg');
+    background-position: center;
 }
 
 %card-size{
@@ -57,7 +59,7 @@
 
 body{
     font-family: 'ZCOOL KuaiLe', cursive;
-    background: #333;
+    margin: 0;
 }
 
 hr{
@@ -127,11 +129,6 @@ hr{
 
 }
 
-.main-header{
-    width: 30%;
-    margin-left: 36%;
-    margin-top: 2%;
-}
 .trainer{
     width: 3%;
     position: absolute;
@@ -232,7 +229,7 @@ hr{
 .grid{
     position: relative;
     left: 6rem;
-    top: 3rem;
+    top: 11rem;
     width: 65%;
     margin: 0 auto;
 }
