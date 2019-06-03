@@ -63,47 +63,22 @@ reload(joan)
 reload(esteban)
 
 const allTrainers = [jason, joan, esteban]
-const jasonCards = document.getElementsByClassName('jason')
-const joanCards = document.getElementsByClassName('joan')
-const estebanCards = document.getElementsByClassName('esteban')
+const allCards = document.getElementsByClassName('pkcard')
 
-const allCards = [jasonCards, joanCards, estebanCards]
-
-var count = 0
+var count = -1
 setTimeout(function() {
-for (person of allTrainers) {
-  for (eachPokemon of jason.party) {
-    jasonCards[count].children[0].innerHTML = `<h4>Name:</h4> <span>${eachPokemon.name}</span> <h4>HP:</h4> <span>${eachPokemon.hp}</span>`
-    jasonCards[count].children[1].innerHTML =  `<img class="trainer-poke" src="${eachPokemon.sprite}" >`
-    jasonCards[count].children[2].children[0].innerHTML = `<span class='poke-atr' id='poke-atk'>Attack:</span> <strong>${eachPokemon.atk}</strong>`
-    jasonCards[count].children[2].children[1].innerHTML = `<span class='poke-atr' id='poke-def'>Defense:</span> <strong>${eachPokemon.def}</strong>`
-    jasonCards[count].children[2].children[2].innerHTML = `<span class='poke-atr' id='poke-spatk'>Sp Attack:</span> <strong>${eachPokemon.sp_atk}</strong>`
-    jasonCards[count].children[2].children[3].innerHTML = `<span class='poke-atr' id='poke-spdef'>Sp Defense:</span> <strong>${eachPokemon.sp_def}</strong>`
-    jasonCards[count].children[2].children[4].innerHTML = `<span class='poke-atr' id='poke-spd'>Speed:</span> <strong>${eachPokemon.spd}</strong>`
-      count++
+  for (perCard of allCards) {
+    for (person of allTrainers) {
+      for (eachPokemon of person.party) {
+        count++
+        allCards[count].children[0].innerHTML = `<h4>Name:</h4> <span>${eachPokemon.name}</span> <h4>HP:</h4> <span>${eachPokemon.hp}</span>`
+        allCards[count].children[1].innerHTML =  `<img class="trainer-poke" src="${eachPokemon.sprite}" >`
+        allCards[count].children[2].children[0].innerHTML = `<span class='poke-atr' id='poke-atk'>Attack:</span> <strong>${eachPokemon.atk}</strong>`
+        allCards[count].children[2].children[1].innerHTML = `<span class='poke-atr' id='poke-def'>Defense:</span> <strong>${eachPokemon.def}</strong>`
+        allCards[count].children[2].children[2].innerHTML = `<span class='poke-atr' id='poke-spatk'>Sp Attack:</span> <strong>${eachPokemon.sp_atk}</strong>`
+        allCards[count].children[2].children[3].innerHTML = `<span class='poke-atr' id='poke-spdef'>Sp Defense:</span> <strong>${eachPokemon.sp_def}</strong>`
+        allCards[count].children[2].children[4].innerHTML = `<span class='poke-atr' id='poke-spd'>Speed:</span> <strong>${eachPokemon.spd}</strong>`
+      }
     }
-    count = 0
-  for (eachPokemon of joan.party) {
-    joanCards[count].children[0].innerHTML = `<h4>Name:</h4> <span>${eachPokemon.name}</span> <h4>HP:</h4> <span>${eachPokemon.hp}</span>`
-    joanCards[count].children[1].innerHTML =  `<img class="trainer-poke" src="${eachPokemon.sprite}" >`
-    joanCards[count].children[2].children[0].innerHTML = `<span class='poke-atr' id='poke-atk'>Attack:</span> <strong>${eachPokemon.atk}</strong>`
-    joanCards[count].children[2].children[1].innerHTML = `<span class='poke-atr' id='poke-def'>Defense:</span> <strong>${eachPokemon.def}</strong>`
-    joanCards[count].children[2].children[2].innerHTML = `<span class='poke-atr' id='poke-spatk'>Sp Attack:</span> <strong>${eachPokemon.sp_atk}</strong>`
-    joanCards[count].children[2].children[3].innerHTML = `<span class='poke-atr' id='poke-spdef'>Sp Defense:</span> <strong>${eachPokemon.sp_def}</strong>`
-    joanCards[count].children[2].children[4].innerHTML = `<span class='poke-atr' id='poke-spd'>Speed:</span> <strong>${eachPokemon.spd}</strong>`
-      count++
-    }
-    count = 0
-  for (eachPokemon of esteban.party) {
-    estebanCards[count].children[0].innerHTML = `<h4>Name:</h4> <span>${eachPokemon.name}</span> <h4>HP:</h4> <span>${eachPokemon.hp}</span>`
-    estebanCards[count].children[1].innerHTML =  `<img class="trainer-poke" src="${eachPokemon.sprite}" >`
-    estebanCards[count].children[2].children[0].innerHTML = `<span class='poke-atr' id='poke-atk'>Attack:</span> <strong>${eachPokemon.atk}</strong>`
-    estebanCards[count].children[2].children[1].innerHTML = `<span class='poke-atr' id='poke-def'>Defense:</span> <strong>${eachPokemon.def}</strong>`
-    estebanCards[count].children[2].children[2].innerHTML = `<span class='poke-atr' id='poke-spatk'>Sp Attack:</span> <strong>${eachPokemon.sp_atk}</strong>`
-    estebanCards[count].children[2].children[3].innerHTML = `<span class='poke-atr' id='poke-spdef'>Sp Defense:</span> <strong>${eachPokemon.sp_def}</strong>`
-    estebanCards[count].children[2].children[4].innerHTML = `<span class='poke-atr' id='poke-spd'>Speed:</span> <strong>${eachPokemon.spd}</strong>`
-      count++
-    }
-    count = 0
   }
 }, 400)
