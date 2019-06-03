@@ -6,7 +6,7 @@
 
 .container-3, .container-2, .container-1 {
   position: relative;
-  background-image: url("pokebg2.jpg");
+  background-image: url("images/pokebg2.jpg");
   background-position: center;
   min-height: 800px;
   background-attachment: fixed;
@@ -76,39 +76,39 @@ hr {
 }
 
 .container-1 .card {
-  background-image: url("steelaf.jpg");
+  background-image: url("images/steelaf.jpg");
 }
 .container-1 .card-2 {
-  background-image: url("steelaf.jpg");
+  background-image: url("images/steelaf.jpg");
 }
 .container-1 .card-3 {
-  background-image: url("steelaf.jpg");
+  background-image: url("images/steelaf.jpg");
 }
 .container-1 .top-square {
   background: black;
 }
 
 .container-2 .card {
-  background-image: url("test.jpg");
+  background-image: url("images/test.jpg");
 }
 .container-2 .card-2 {
-  background-image: url("test.jpg");
+  background-image: url("images/test.jpg");
 }
 .container-2 .card-3 {
-  background-image: url("test.jpg");
+  background-image: url("images/test.jpg");
 }
 .container-2 .top-square {
   background: black;
 }
 
 .container-3 .card {
-  background-image: url("blue.jpg");
+  background-image: url("images/blue.jpg");
 }
 .container-3 .card-2 {
-  background-image: url("yellow.jpg");
+  background-image: url("images/yellow.jpg");
 }
 .container-3 .card-3 {
-  background-image: url("red.jpg");
+  background-image: url("images/red.jpg");
 }
 .container-3 .top-square {
   background: black;
@@ -182,6 +182,14 @@ hr {
 
 #poke-spd {
   color: #18e002;
+}
+
+.grid {
+  position: relative;
+  left: 6rem;
+  top: 11rem;
+  width: 65%;
+  margin: 0 auto;
 }
 
 .stats {
