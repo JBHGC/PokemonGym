@@ -8,7 +8,7 @@
     position: relative;
     background-image: url('pokebg2.jpg');
     background-position: center;
-    min-height: 800px; 
+    min-height: 800px;
 
     background-attachment: fixed;
     background-position: center;
@@ -33,7 +33,7 @@
     top: 1rem;
     margin: 0 auto;
     border-radius: 5px;
- 
+
 }
 
 %bottom-square-size{
@@ -112,7 +112,7 @@ hr{
     .top-square{
         background: black;
     }
-    
+
 
 }
 
@@ -185,16 +185,7 @@ hr{
     }
 }
 
-.jason-poke{
-    @extend %poke-gif-attributes;
-}
-
-.joan-poke{
-    @extend %poke-gif-attributes;
-    
-}
-
-.este-poke{
+.trainer-poke {
     @extend %poke-gif-attributes;
 }
 
@@ -213,7 +204,7 @@ hr{
 }
 
 .poke-atr{
-    font-weight: 600;  
+    font-weight: 600;
 }
 #poke-atk{
     color: #FF5959;
