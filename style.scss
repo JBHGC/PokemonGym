@@ -1,7 +1,7 @@
 %trainer-size{
     position: absolute;
-    left: 1rem;
-    top: 1rem;
+    left: 5rem;
+    top: 13rem;
 }
 
 %container-attributes{
@@ -144,6 +144,8 @@ hr{
 .trainer-1{
     @extend %trainer-size;
     width: 13%;
+    left: 8rem;
+    top: 19rem;
 }
 
 .trainer-2{
@@ -185,18 +187,10 @@ hr{
     }
 }
 
-.jason-poke{
+.trainer-poke{
     @extend %poke-gif-attributes;
 }
 
-.joan-poke{
-    @extend %poke-gif-attributes;
-    
-}
-
-.este-poke{
-    @extend %poke-gif-attributes;
-}
 
 .grid{
     position: relative;
