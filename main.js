@@ -79,7 +79,16 @@ setTimeout(function() {
         allCards[count].children[2].children[2].innerHTML = `<span class='poke-atr' id='poke-spatk'>Sp Attack:</span> <strong>${eachPokemon.sp_atk}</strong>`
         allCards[count].children[2].children[3].innerHTML = `<span class='poke-atr' id='poke-spdef'>Sp Defense:</span> <strong>${eachPokemon.sp_def}</strong>`
         allCards[count].children[2].children[4].innerHTML = `<span class='poke-atr' id='poke-spd'>Speed:</span> <strong>${eachPokemon.spd}</strong>`
+        if (count == 8) {
+          break
+        }
       }
+    if (count == 8) {
+      break
+    }
+    }
+    if (count == 8) {
+      break
     }
   }
 }, 400)
