@@ -44,7 +44,7 @@ function loadPkmn(pknum, trainer) {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       data = JSON.parse(this.responseText)
-      pokemon = new Pkmn(data.id, data.species.name.charAt(0).toUpperCase()+data.species.name.slice(1), data.stats[5].base_stat, data.stats[4].base_stat, data.stats[3].base_stat, data.stats[2].base_stat, data.stats[1].base_stat, data.stats[0].base_stat, `pkmngif/${data.species.name}.png`)
+      pokemon = new Pkmn(data.id, data.species.name.charAt(0).toUpperCase()+data.species.name.slice(1), data.stats[5].base_stat, data.stats[4].base_stat, data.stats[3].base_stat, data.stats[2].base_stat, data.stats[1].base_stat, data.stats[0].base_stat, `pkmngifs/${data.species.name}.png`)
       trainer.party.push(pokemon)
       trainer.party.shift()
     }
